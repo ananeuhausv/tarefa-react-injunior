@@ -1,0 +1,41 @@
+.container {
+    width: 70%;
+    height: 656px;
+    background-color: #0E0E1B;
+    margin: 1.2rem 2.5rem;
+    border-radius: 20px;
+    padding: 2rem;
+}
+
+.container > div > p{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 20px;
+    color: #CCCCCC;
+    margin: 4rem 1rem;
+    text-align: justify;
+}
+.feedback {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.feedback > h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+.feedback > textarea {
+    resize: none;
+    height: 112px;
+    border-radius: 8px;
+    background-color: #DDDDDD;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 20px;
+    color: #444444;
+    padding: .7rem;
+}
