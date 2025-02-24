@@ -1,22 +1,25 @@
+import CommentButton from '../CommentButton/CommentButton'
 import HeaderCardPost from '../HeaderCardPost/HeaderCardPost'
+import TextareaCardPost from '../TextareaCardPost/TextareaCardPost'
 import styles from './styles.module.css'
 
+export interface CardPostProps{
+    picture: string
+    name: string
+    profession: string
+    timePosted: string
+    post?: string
+}
 
-export default function CardPost() {
+export default function CardPost({ picture, name, profession, timePosted, post }: CardPostProps) {
     return (
         <div className={styles.container}>
-        <HeaderCardPost/>
-        <div>
-            <p>Lorem ipsum dolor sit amet. <br /> <br /> Ex laboriosam dolorem non tempore earum et voluptatem suscipit ut cupiditate nisi est odit voluptates. Nam magni amet ut ipsam molestiae aut facilis minus et quia reiciendis sed excepturi rerum ex consequatur minima! Ex rerum sunt et incidunt officia et veritatis deserunt. Sit soluta laboriosam et incidunt sequi et eius fugiat est temporibus similique rem illum natus sit unde eveniet. <br /> <br /> Non quos omnis ut autem labore nam vero consequatur est porro similique ad adipisci quisquam!</p>
+        <HeaderCardPost name={name} picture={picture} profession={profession} timePosted={timePosted}/>
+        <div className={styles.post}>
+            <p>{post}</p>
         </div>
-        <div className={styles.feedback}>
-            <h3>Deixe seu feedback</h3>
-            <textarea name="feedback" placeholder="Escreva um comentário..."></textarea>
-            
-        </div>
-        <div className={styles.button}>
-            <button>Comentar</button>
-        </div>
+        <TextareaCardPost/>
+        <CommentButton/>
         </div>
     )
 }
