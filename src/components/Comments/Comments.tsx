@@ -17,7 +17,7 @@ export default function Comments({ comment }: CommentsProps) {
                 <div>
                     <div>
                         <div>
-                            <h3>Felyppe Nunes</h3>
+                            <h3>Ana Laura</h3>
                             <p>Cerca de 2h</p> 
                         </div>
                         <img src={trash} alt="icone de lixeira" /> 
