@@ -1,0 +1,62 @@
+.comments {
+    height: 150px;
+    display: flex; 
+    gap: 15px; 
+    margin: 1.2rem; 
+    align-items: center;
+}
+.comments > img {
+    width: 73px;
+    height: 73px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.comments > div {
+    width: 95%;
+    height: 120px;
+    background-color: #1C1C2F;
+    border-radius: 5px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+    padding-bottom: 1rem;
+}
+
+.comments > div > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: .2rem;
+    margin-bottom: 1rem;
+}
+.comments > div > div > img {
+    width: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.comments > div > div > div > h3 {
+    font-size: .8rem;
+    font-weight: 700;
+    line-height: 17px;
+    color: #FFFFFF;
+}
+.comments > div > div > div > p{
+    font-size: .8rem;
+    font-weight: 700;
+    line-height: 17px;
+    color: #999999;
+}
+
+.comments > div > p{
+    font-size: .8rem;
+    font-weight: 400;
+    line-height: 17px;
+    color: #FFFFFF;
+}
+
+
+
+
