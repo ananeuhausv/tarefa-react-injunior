@@ -1,12 +1,11 @@
 .container {
-    width: 95%;
-    height: 656px;
+    max-width: 95%;
+    height: auto;
     background-color: #0E0E1B;
     margin: 1.2rem 3rem 1.2rem 1rem;
     border-radius: 20px;
     padding: 2rem;
 }
-
 .post{
     font-size: 1rem;
     font-weight: 400;
@@ -15,4 +14,5 @@
     margin: 4rem 1rem 3rem 1rem;
     text-align: justify;
 }
+
 
