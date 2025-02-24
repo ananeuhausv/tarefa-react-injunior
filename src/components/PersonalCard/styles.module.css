@@ -8,7 +8,7 @@
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
-    margin: 1.2rem 2.5rem;
+    margin: 1.2rem 0 2.5rem 3rem;
 }
 
 .about {
