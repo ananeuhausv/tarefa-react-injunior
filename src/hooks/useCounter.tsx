@@ -1,7 +1,7 @@
 import { useState } from "react";
 
-export default function useCounter() {
-    const [counter, setCounter] = useState(0);
+export default function useCounter(initialValue: number = 0) {
+    const [counter, setCounter] = useState(initialValue);
     const [isLiked, setIsLiked] = useState(false);
 
     const toggleLike = () => {
