@@ -10,7 +10,7 @@ interface CommentsProps {
         text: string;
         timePosted: string;
         likes: number;
-    }
+    };
     onDeleteComment: () => void;
 }
 
