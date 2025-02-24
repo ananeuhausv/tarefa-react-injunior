@@ -1,6 +1,7 @@
 import styles from "./styles.module.css"
 import trash from '../../assets/Trash.png'
 import LikeButton from "../LikeButton/LikeButton"
+import useCounter from "../../hooks/useCounter";
 
 interface CommentsProps {
     commentData: {
@@ -15,6 +16,8 @@ interface CommentsProps {
 }
 
 export default function Comments({ commentData, onDeleteComment }: CommentsProps) {
+
+    const { counter, isLiked, toggleLike } = useCounter(commentData.likes);
 
     return(
         <div>
@@ -33,7 +36,11 @@ export default function Comments({ commentData, onDeleteComment }: CommentsProps
                     <p>{commentData.text}</p>
                 </div>
             </div>
-            <LikeButton/>
+            <LikeButton
+                likes={counter}
+                isLiked={isLiked}
+                onToggleLike={toggleLike}
+            />
         </div> 
     )
 }
