@@ -1,28 +1,36 @@
 import styles from "./styles.module.css"
-import foto from '../../assets/foto.ana.png'
 import trash from '../../assets/Trash.png'
-
 import LikeButton from "../LikeButton/LikeButton"
 
 interface CommentsProps {
-    comment: string;
+    commentData: {
+        id: number;
+        name: string;
+        photo: string;
+        text: string;
+        timePosted: string;
+        likes: number;
+    }
+    onDeleteComment: () => void;
 }
 
-export default function Comments({ comment }: CommentsProps) {
+export default function Comments({ commentData, onDeleteComment }: CommentsProps) {
 
     return(
         <div>
            <div className={styles.comments}>
-                <img src={foto} alt="foto de perfil"/>
+                <img src={commentData.photo} alt="foto de perfil"/>
                 <div>
                     <div>
                         <div>
-                            <h3>Ana Laura</h3>
-                            <p>Cerca de 2h</p> 
+                            <h3>{commentData.name}</h3>
+                            <p>{commentData.timePosted}</p> 
                         </div>
-                        <img src={trash} alt="icone de lixeira" /> 
+                        <button onClick={onDeleteComment}>
+                           <img src={trash} alt="icone de lixeira" /> 
+                        </button>
                     </div>
-                    <p>{comment}</p>
+                    <p>{commentData.text}</p>
                 </div>
             </div>
             <LikeButton/>
