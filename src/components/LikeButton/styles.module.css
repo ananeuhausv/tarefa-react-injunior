@@ -1,0 +1,22 @@
+.likeContainer {
+    gap: 10rem;
+    margin-left: 6.8rem;
+    margin-top: -1.5rem;
+}
+.likeContainer button {
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    color: #FFFFFF;
+    font-size: .9rem;
+    cursor: pointer;
+}
+.likeContainer img {
+    margin-right: .5rem;
+}
+
+.likedButton {
+    color: #007DFA !important;
+}
+
